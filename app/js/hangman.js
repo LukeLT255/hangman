@@ -116,22 +116,26 @@ function hangman(category) {
     const allLettersOnBoard = document.querySelectorAll('.letter');
     allLettersOnBoard.forEach((letter) => {
         letter.addEventListener('click', (e) => {
-            e.target.classList.add('disabled');
-            const clickedLetter = e.target.dataset.letter;
-            const contains = checkForMatch(clickedLetter, itemToGuessSplit);
-            if(contains) {
-                const allMatchedLetters = document.querySelectorAll(`span[data-hiddenLetter="${clickedLetter.toLowerCase()}"]`);
-                allMatchedLetters.forEach((element) => {
-                    element.classList.add('opacity-one');
-                    element.innerHTML = `<span class='found-letter' data-found-letter='${clickedLetter}'>${clickedLetter}</span>`;
-                    correctGuesses++;
-                });
+            if(e.target.classList.contains('disabled')) {
+                //do nothing
             } else {
-                health -= 12.5;
-                healthBar.style.width = `${health}%`;
+                e.target.classList.add('disabled');
+                const clickedLetter = e.target.dataset.letter;
+                const contains = checkForMatch(clickedLetter, itemToGuessSplit);
+                if(contains) {
+                    const allMatchedLetters = document.querySelectorAll(`span[data-hiddenLetter="${clickedLetter.toLowerCase()}"]`);
+                    allMatchedLetters.forEach((element) => {
+                        element.classList.add('opacity-one');
+                        element.innerHTML = `<span class='found-letter' data-found-letter='${clickedLetter}'>${clickedLetter}</span>`;
+                        correctGuesses++;
+                    });
+                } else {
+                    health -= 12.5;
+                    healthBar.style.width = `${health}%`;
+                }
+                checkIfLost(health);
+                checkIfWon(winningNumber, correctGuesses);
             }
-            checkIfLost(health);
-            checkIfWon(winningNumber, correctGuesses);
         })
     });
 
