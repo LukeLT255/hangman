@@ -4,8 +4,8 @@ function howTo() {
     document.querySelector('body').innerHTML = `
         <section class='how-to-section'>
             <div class='navbar'>
-                <button class='back-button'><img src='../../assets/images/icon-back.svg' alt='Back Arrow to go to previous page'></button>
-                <img src='../../assets/images/howToPlay.svg' alt='Text reading, How to Play'/>
+                <button class='back-button'><img src='../../images/icon-back.svg' alt='Back Arrow to go to previous page'></button>
+                <img src='../../images/howToPlay.svg' alt='Text reading, How to Play'/>
             </div>
             <div class='how-to-div-container'>
                 <div class='how-to-div one'>
