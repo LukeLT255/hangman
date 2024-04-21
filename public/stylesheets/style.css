@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "Mouse Memoirs";
+  src: url("../fonts/MouseMemoirs-Regular.woff2") format("woff2"), url("../fonts/MouseMemoirs-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3, h4, p, a, li, button {
+  font-family: "Mouse Memoirs", Times, serif;
+}
+
+body {
+  background-image: url("../../assets/images/background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.home-menu-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-menu-div {
+  width: 100%;
+  max-width: 325px;
+  min-height: 480px;
+  background: rgb(0, 20, 121);
+  background: linear-gradient(0deg, rgba(0, 20, 121, 0.83) 0%, rgb(52, 74, 186) 100%);
+  border-radius: 35px;
+  box-shadow: 0 -8px 0 4px #140E66 inset, 0 6px 0 8px #2463FF inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-title {
+  max-width: 250px;
+  flex: 1 0 20%;
+}
+.menu-title img {
+  margin-top: -50px;
+}
+
+.play-button {
+  background: rgb(254, 113, 254);
+  background-image: linear-gradient(180deg, rgb(254, 113, 254) 0%, rgb(113, 153, 255) 100%);
+  box-shadow: inset 0 -4px 0 5px #243041, inset 0 -12px 0 11px #9D2DF5;
+  border-radius: 100%;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.play-button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(180deg, rgb(254, 168, 254) 0%, rgb(146, 183, 255) 100%);
+}
+
+.play-button-div, .how-to-button-div {
+  flex: 1 0 40%;
+}
+
+.how-to-button {
+  height: 62px;
+  width: 260px;
+  background: #2463FF;
+  box-shadow: inset 0 -2px 0 3px #140E66, inset 0 1px 0 6px #3C74FF;
+  border-radius: 50px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("../../assets/images/background-tablet.svg");
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url("../../assets/images/background-desktop.svg");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
