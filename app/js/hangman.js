@@ -104,7 +104,7 @@ function hangman(category) {
         if(letter === ' ') {
             hiddenWordDiv.innerHTML += `<br/>`;
         } else {
-            hiddenWordDiv.innerHTML += `<span class='hidden-letter' data-hiddenLetter='${letter}'></span>`;
+            hiddenWordDiv.innerHTML += `<span class="hidden-letter" data-hiddenLetter="${letter}"></span>`;
         }
     });
 
