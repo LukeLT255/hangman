@@ -45,7 +45,7 @@ h1, h2, h3, h4, p, a, li, button {
 }
 
 body {
-  background-image: url("../../assets/images/background-mobile.svg");
+  background-image: url("../../imagesbackground-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -116,12 +116,12 @@ body {
 
 @media (min-width: 600px) {
   body {
-    background-image: url("../../assets/images/background-tablet.svg");
+    background-image: url("../../imagesbackground-tablet.svg");
   }
 }
 @media (min-width: 1024px) {
   body {
-    background-image: url("../../assets/images/background-desktop.svg");
+    background-image: url("../../imagesbackground-desktop.svg");
   }
 }
 
