@@ -4,8 +4,8 @@ function category() {
     document.querySelector('body').innerHTML = `
         <section class='how-to-section'>
             <div class='navbar'>
-                <button class='back-button'><img src='../../images/icon-back.svg' alt='Back Arrow to go to previous page'></button>
-                <img src='../../images/Category.svg' alt='Text reading, Pick A Category'/>
+                <button class='back-button'><img src='images/icon-back.svg' alt='Back Arrow to go to previous page'></button>
+                <img src='images/Category.svg' alt='Text reading, Pick A Category'/>
             </div>
             <div class='category-div-container'>
                 <div class='category-div one'>

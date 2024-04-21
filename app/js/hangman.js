@@ -1,9 +1,9 @@
 import {updateLocalStorage} from './utils'
 import data from '../../data.json';
 
-const titlePausedImg = `<img src="../../images/paused.svg" alt="Text that says, 'Paused'"/>`;
-const titleWinImg = `<img src="../../images/you-win.svg" alt="Text that says, 'You Win'"/>`;
-const titleLoseImg = `<img src="../../images/you-lose.svg" alt="Text that says, 'You Lose'"/>`;
+const titlePausedImg = `<img src="images/paused.svg" alt="Text that says, 'Paused'"/>`;
+const titleWinImg = `<img src="images/you-win.svg" alt="Text that says, 'You Win'"/>`;
+const titleLoseImg = `<img src="images/you-lose.svg" alt="Text that says, 'You Lose'"/>`;
 
 let currentTitle = titlePausedImg;
 
@@ -76,14 +76,14 @@ function hangman(category) {
             </div>
             <div class='hangman-nav'>
                 <div class='left'>
-                    <button class='hamburger-nav'><img src='../../images/icon-menu.svg' alt='Hamburger navigation button'/></button>
+                    <button class='hamburger-nav'><img src='images/icon-menu.svg' alt='Hamburger navigation button'/></button>
                     <h2>${category.replace('-', ' ')}</h2>
                 </div>
                 <div class='right'>
                     <div class='progress-bar-outside'>
                         <span class='progress-bar-inside'></span>
                     </div>
-                    <img class='heart' src='../../images/icon-heart.svg' alt='Heart icon'/>
+                    <img class='heart' src='images/icon-heart.svg' alt='Heart icon'/>
                 </div>
             </div>
             <div class='hangman-game-board'>
